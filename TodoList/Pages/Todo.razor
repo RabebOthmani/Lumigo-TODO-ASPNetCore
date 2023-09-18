@@ -1,6 +1,6 @@
 ﻿@page "/todo"
 
-<PageTitle>Todo</PageTitle>
+<PageTitle>TODO</PageTitle>
 
 <h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
 
@@ -14,8 +14,8 @@
     }
 </ul>
 
-<input placeholder="Something todo" @bind="newTodo"/>
-<button @onclick="AddTodo">Add todo</button>
+<input placeholder="An item for the TODO list" @bind="newTodo"/>
+<button @onclick="AddTodo">Add</button>
 
 @code {
     private string? newTodo;
